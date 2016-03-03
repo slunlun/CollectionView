@@ -42,6 +42,7 @@
 		5EEAB16A1C87DB46008A45EF = {
 			isa = PBXGroup;
 			children = (
+				5EEAB18D1C87DBE8008A45EF /* UICollectionView */,
 				5EEAB1751C87DB46008A45EF /* CollectionView */,
 				5EEAB1741C87DB46008A45EF /* Products */,
 			);
@@ -77,6 +78,13 @@
 				5EEAB1771C87DB46008A45EF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EEAB18D1C87DBE8008A45EF /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UICollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
