@@ -13,6 +13,8 @@
 		5EEAB1811C87DB46008A45EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAB17F1C87DB46008A45EF /* Main.storyboard */; };
 		5EEAB1831C87DB46008A45EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAB1821C87DB46008A45EF /* Assets.xcassets */; };
 		5EEAB1861C87DB46008A45EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAB1841C87DB46008A45EF /* LaunchScreen.storyboard */; };
+		5EEAB1911C87DD40008A45EF /* SWTestQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAB18F1C87DD40008A45EF /* SWTestQuestionCell.m */; };
+		5EEAB1921C87DD40008A45EF /* SWTestQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAB1901C87DD40008A45EF /* SWTestQuestionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		5EEAB1821C87DB46008A45EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EEAB1851C87DB46008A45EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EEAB1871C87DB46008A45EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EEAB18E1C87DD40008A45EF /* SWTestQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTestQuestionCell.h; sourceTree = "<group>"; };
+		5EEAB18F1C87DD40008A45EF /* SWTestQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTestQuestionCell.m; sourceTree = "<group>"; };
+		5EEAB1901C87DD40008A45EF /* SWTestQuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWTestQuestionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,9 @@
 		5EEAB18D1C87DBE8008A45EF /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5EEAB18E1C87DD40008A45EF /* SWTestQuestionCell.h */,
+				5EEAB18F1C87DD40008A45EF /* SWTestQuestionCell.m */,
+				5EEAB1901C87DD40008A45EF /* SWTestQuestionCell.xib */,
 			);
 			name = UICollectionView;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEAB1861C87DB46008A45EF /* LaunchScreen.storyboard in Resources */,
+				5EEAB1921C87DD40008A45EF /* SWTestQuestionCell.xib in Resources */,
 				5EEAB1831C87DB46008A45EF /* Assets.xcassets in Resources */,
 				5EEAB1811C87DB46008A45EF /* Main.storyboard in Resources */,
 			);
@@ -158,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EEAB17E1C87DB46008A45EF /* ViewController.m in Sources */,
+				5EEAB1911C87DD40008A45EF /* SWTestQuestionCell.m in Sources */,
 				5EEAB17B1C87DB46008A45EF /* AppDelegate.m in Sources */,
 				5EEAB1781C87DB46008A45EF /* main.m in Sources */,
 			);
