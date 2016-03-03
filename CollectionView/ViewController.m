@@ -8,13 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 @property(nonatomic, strong) UIView *dragMoveView;
 @property(nonatomic) CGPoint beginPoint;
 @property(nonatomic, strong) NSLayoutConstraint *heightConstraint;
 @property(nonatomic) CGFloat initHeight;
 @property(nonatomic) CGFloat maxHeight;
 @property(nonatomic) CGFloat beginHeight;
+@property(nonatomic, strong) UICollectionView *contentCollectionView;
 @end
 
 @implementation ViewController
@@ -38,6 +39,9 @@
     
     self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.dragMoveView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:self.initHeight];
     [self.view addConstraint:self.heightConstraint];
+    
+    _contentCollectionView = [[UICollectionView alloc] init];
+    
 }
 
 -(void) panViewResponse:(UIPanGestureRecognizer *) panGesture
