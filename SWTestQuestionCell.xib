@@ -7,32 +7,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SWTestQuestionCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="SW_QUESTION_NUM_CELL" id="gTV-IL-0wX" customClass="SWTestQuestionCell">
             <rect key="frame" x="0.0" y="0.0" width="183" height="128"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="183" height="128"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d3-s6-lhz">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeG-Wk-QTl">
                         <rect key="frame" x="0.0" y="0.0" width="183" height="128"/>
-                        <state key="normal" title="Button"/>
-                        <connections>
-                            <action selector="questionButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yif-W9-vP7"/>
-                        </connections>
-                    </button>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.13336591170000001" green="0.37020261920000003" blue="0.96581044819999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="6d3-s6-lhz" secondAttribute="bottom" id="1kn-NY-bkb"/>
-                <constraint firstAttribute="trailing" secondItem="6d3-s6-lhz" secondAttribute="trailing" id="2BN-i4-ifZ"/>
-                <constraint firstItem="6d3-s6-lhz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mbe-wq-Htv"/>
-                <constraint firstItem="6d3-s6-lhz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ymj-y2-Mrx"/>
+                <constraint firstItem="jeG-Wk-QTl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4sh-zg-NYN"/>
+                <constraint firstAttribute="bottom" secondItem="jeG-Wk-QTl" secondAttribute="bottom" id="5b7-ny-6R1"/>
+                <constraint firstAttribute="trailing" secondItem="jeG-Wk-QTl" secondAttribute="trailing" id="6ZA-ny-JBc"/>
+                <constraint firstItem="jeG-Wk-QTl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eId-sf-Thl"/>
             </constraints>
             <size key="customSize" width="183" height="128"/>
             <connections>
-                <outlet property="questionButton" destination="6d3-s6-lhz" id="hFo-mk-UCs"/>
-                <outlet property="questionItemButton" destination="6d3-s6-lhz" id="Cbl-od-DPS"/>
+                <outlet property="SWQuestionNumLabel" destination="jeG-Wk-QTl" id="df1-9b-GWo"/>
             </connections>
             <point key="canvasLocation" x="433.5" y="547"/>
         </collectionViewCell>

@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SWTestQuestionCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIButton *questionItemButton;
-
+@property (weak, nonatomic) IBOutlet UILabel *SWQuestionNumLabel;
 
 @end
